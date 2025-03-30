@@ -30,7 +30,7 @@ You can also run the program with the example database file:
 ### Option 1: Using the Program
 
 You can create your own database file by running the program and giving a filename that does not yet exist.
-You can then start adding new books to the database with the program.
+You can then start adding new books to the database with the program. If you do not add any books, the file is not created.
 
 ### Option 2: Manually Creating A Database File
 
