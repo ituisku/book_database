@@ -71,6 +71,8 @@ def save_books(file, books_list):
                 file.write(f"{book['name']}/{book['writer']}/{book['isbn']}/{book['year']}\n")
 
 if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("To run the program, you should give a name of a book database file: python .\book_db.py <filename>")
     filename = sys.argv[1]
     books_list = books_to_list(filename)
     while True:
