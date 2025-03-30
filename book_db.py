@@ -1,4 +1,5 @@
 import sys
+from datetime import datetime
 
 def books_to_list(file):
     books_list = []
@@ -57,7 +58,8 @@ def get_isbn_from_user():
 def get_publishing_year_from_user():
     while True:
         year = input("Enter publishing year: ")
-        if year.isdigit() and int(year) > 0 and int(year) <= 2025:
+        current_year = datetime.now().year
+        if year.isdigit() and int(year) > 0 and int(year) <= current_year:
             return int(year)
         else:
             print("Invalid year. Only positive numbers are accepted.")
